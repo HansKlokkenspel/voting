@@ -20,9 +20,6 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="neuralnetworkinterface.westeurope.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="244CE84955D20872A005652EA68BEB0BAF33F4FA" FindType="FindByThumbprint" FindValue="244CE84955D20872A005652EA68BEB0BAF33F4FA" StoreLocation="CurrentUser" StoreName="My" />
+  <ClusterConnectionParameters />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
-  <UpgradeDeployment Mode="Monitored" Enabled="true">
-    <Parameters FailureAction="Rollback" UpgradeReplicaSetCheckTimeoutSec="10" Force="True" />
-  </UpgradeDeployment>
 </PublishProfile>
